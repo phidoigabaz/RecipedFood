@@ -1,0 +1,30 @@
+PODS:
+  - ImageSlideshow (1.6.1):
+    - ImageSlideshow/Core (= 1.6.1)
+  - ImageSlideshow/Core (1.6.1)
+  - VBRRollingPit (1.0.0)
+
+DEPENDENCIES:
+  - ImageSlideshow (~> 1.6)
+  - VBRRollingPit (from `https://github.com/v-braun/VBRRollingPit.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ImageSlideshow
+
+EXTERNAL SOURCES:
+  VBRRollingPit:
+    :git: https://github.com/v-braun/VBRRollingPit.git
+
+CHECKOUT OPTIONS:
+  VBRRollingPit:
+    :commit: 2e98939f7febba9029b8cbbbe6f2d8c370556109
+    :git: https://github.com/v-braun/VBRRollingPit.git
+
+SPEC CHECKSUMS:
+  ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
+  VBRRollingPit: f8b22027740d7972ab22ee7925a81618ad57326b
+
+PODFILE CHECKSUM: 286ed3668b577389d4eed6985b731537fa1d1194
+
+COCOAPODS: 1.5.3
