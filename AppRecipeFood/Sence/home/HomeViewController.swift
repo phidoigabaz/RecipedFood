@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
@@ -44,6 +44,8 @@ extension HomeViewController: UITableViewDataSource {
             return 1
         case 2:
             return 1
+        case 3:
+            return 3
         default:
             break
         }
@@ -65,6 +67,11 @@ extension HomeViewController: UITableViewDataSource {
             let cell = CollectionTableViewCell.dequeueReuseCellWithNib(in: tableView, reuseIdentifier: CollectionTableViewCell.nibName())
             return cell
         }
+        
+        if indexPath.section == 3 {
+            let cell = PlayListTableViewCell.dequeueReuseCellWithNib(in: tableView, reuseIdentifier: PlayListTableViewCell.nibName())
+            return cell
+        }
         return UITableViewCell(style: .default, reuseIdentifier: "cell")
     }
 }
@@ -77,6 +84,8 @@ extension HomeViewController: UITableViewDelegate {
             return 400.0
         } else if indexPath.section == 2 {
             return 250.0
+        } else if indexPath.section == 3 {
+            return 70.0
         }
         
         return 0.0

@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="1479.2" y="796.55172413793105"/>
         </scene>
-        <!--Item-->
+        <!--Home View Controller-->
         <scene sceneID="lDJ-yg-zJI">
             <objects>
                 <viewController id="Tyj-Op-oV9" customClass="HomeViewController" customModule="AppRecipeFood" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,7 +124,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ja1-Tl-CS4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="sUS-6T-3bY"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" id="sUS-6T-3bY"/>
                     <navigationItem key="navigationItem" id="eKm-c9-hXB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="576-ST-2SF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,6 +179,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" width="30" height="30"/>
         <image name="user" width="50" height="50"/>
         <image name="woman" width="30" height="30"/>
     </resources>

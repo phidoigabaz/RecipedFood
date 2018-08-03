@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="PlayListTableViewCell" customModule="AppRecipeFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl2" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-25-SQJ">
+                        <rect key="frame" x="10" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="kIx-Rd-maM"/>
+                            <constraint firstAttribute="height" constant="50" id="pdK-0X-FAf"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzf-0I-NHa">
+                        <rect key="frame" x="70" y="10" width="240" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello! Here is the #006 shot for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-ep-9s5">
+                                <rect key="frame" x="0.0" y="0.0" width="229" height="22.5"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download the source file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQS-VI-3bo">
+                                <rect key="frame" x="0.0" y="27.5" width="146" height="18.5"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pQS-VI-3bo" firstAttribute="leading" secondItem="Zzf-0I-NHa" secondAttribute="leading" id="1hN-mh-wPl"/>
+                            <constraint firstItem="8dR-ep-9s5" firstAttribute="top" secondItem="Zzf-0I-NHa" secondAttribute="top" id="JRx-z6-HEP"/>
+                            <constraint firstAttribute="bottom" secondItem="pQS-VI-3bo" secondAttribute="bottom" id="LJ1-s6-KHk"/>
+                            <constraint firstItem="8dR-ep-9s5" firstAttribute="leading" secondItem="Zzf-0I-NHa" secondAttribute="leading" id="dkM-sP-odd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Bf-25-SQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4Gj-ju-Y2d"/>
+                    <constraint firstItem="0Bf-25-SQJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="94F-w7-xcm"/>
+                    <constraint firstAttribute="bottom" secondItem="Zzf-0I-NHa" secondAttribute="bottom" constant="9.5" id="Guy-tO-VJT"/>
+                    <constraint firstItem="Zzf-0I-NHa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MHM-D3-hhF"/>
+                    <constraint firstItem="Zzf-0I-NHa" firstAttribute="leading" secondItem="0Bf-25-SQJ" secondAttribute="trailing" constant="10" id="fEd-Bu-Gsg"/>
+                    <constraint firstItem="0Bf-25-SQJ" firstAttribute="centerY" secondItem="Zzf-0I-NHa" secondAttribute="centerY" id="fzn-FK-akh"/>
+                    <constraint firstAttribute="trailing" secondItem="Zzf-0I-NHa" secondAttribute="trailing" constant="10" id="qHa-D0-wCt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodImage" destination="0Bf-25-SQJ" id="h0k-0d-CLQ"/>
+                <outlet property="kindofFoodlabel" destination="pQS-VI-3bo" id="29F-RK-ZYe"/>
+                <outlet property="nameFoodlabel" destination="8dR-ep-9s5" id="VtZ-LS-pO7"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="girl2" width="600" height="600"/>
+    </resources>
+</document>

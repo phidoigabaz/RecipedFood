@@ -12,7 +12,7 @@ import ImageSlideshow
 class SliderImageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageShow: ImageSlideshow!
-    let imageArray = [ImageSource(imageString: "girl1"),ImageSource(imageString: "girl2"),ImageSource(imageString: "girl3")]
+    let imageArray = [ImageSource(imageString: "girl1"),ImageSource(imageString: "girl7"),ImageSource(imageString: "girl3")]
     @IBOutlet weak var pageControl: UIPageControl!
     
     override func awakeFromNib() {
